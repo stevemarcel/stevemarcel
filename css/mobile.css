@@ -1,0 +1,38 @@
+/* Ipad */
+#about .items{
+  display: block;
+  padding: 1rem;
+}
+
+#about .items .item{
+  text-align: left;
+}
+
+/* Smartphones */
+@media(max-width: 500px){
+  #navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo{
+    margin-bottom: 0.5rem;
+  }
+
+  #navbar ul{
+    padding: 0.5rem
+  }
+
+  #skills .items{
+    display: block;
+    padding: 1rem;
+  }
+  
+  #skills .items .item{
+    text-align: center;
+  }
+
+  #contact .contact-form{
+    margin: 2rem;
+  }
+}
