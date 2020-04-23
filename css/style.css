@@ -1,79 +1,108 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.4;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-p{
+p {
   margin: 0.75rem 0;
 }
 
 /* Utility Classes */
-.container{
+.container {
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
- }
+}
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-green{
+.text-green {
   color: #a4cb52;
 }
-.text-dark{
+
+.text-dark {
   color: #000;
 }
-.text-gry{
+
+.text-gry {
   color: #1a1a1a;
 }
-.text-white{
+
+.text-white {
   color: #fff;
 }
 
-.bg-light{
+.bg-light {
   background: #f4f4f4;
   color: #333;
 }
-.bg-green{
+
+.bg-green {
   background: #a4cb52;
   color: #fff;
 }
 
-.l-heading{
+.l-heading {
   font-size: 3rem;
   margin: 2rem 0;
   line-height: 4rem;
 }
-.m-heading{
+
+.m-heading {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
 
-.py-1{ padding: 1.5rem 0;}
-.py-2{ padding: 2rem 0;}
-.py-3{ padding: 3rem 0;}
+.py-1 {
+  padding: 1.5rem 0;
+}
 
-.pb-1{ padding-bottom: 1.5rem;}
-.pb-2{ padding-bottom: 2rem;}
-.pb-3{ padding-bottom: 3rem;}
+.py-2 {
+  padding: 2rem 0;
+}
 
-.p-1{ padding: 1.5rem;}
-.p-2{ padding: 2rem;}
-.p-3{ padding: 3rem;}
+.py-3 {
+  padding: 3rem 0;
+}
 
-.btn{
+.pb-1 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.btn {
   display: inline-block;
   color: #fff;
   background: #a4cb52;
@@ -81,17 +110,18 @@ p{
   border: none;
   border-radius: 5px;
 }
-.btn:hover{
+
+.btn:hover {
   background: #7ab436;
 }
 
-.profile-pic img{
+.profile-pic img {
   border-radius: 50%;
   box-shadow: 5px 5px 5px;
 }
 
 /* Navbar */
-#navbar{
+#navbar {
   position: sticky;
   top: 0;
   background: #333;
@@ -102,31 +132,31 @@ p{
   padding: 1rem;
 }
 
-#navbar ul{
+#navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-#navbar ul li a{
+#navbar ul li a {
   color: #fff;
   padding: 0.75rem;
   margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
   background: #a4cb52;
   border-radius: 5px;
 }
 
 /* showcase */
-#showcase{
+#showcase {
   background: #a4cb52 url('../img/showcase-bgn.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #333;
 }
 
-#showcase .showcase-content{
+#showcase .showcase-content {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -135,55 +165,55 @@ p{
   height: 100%;
   padding: 0 2rem;
   top: 65px;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   /* background-color: rgba(0, 0, 0, 0.4); */
   background-color: rgba(164, 204, 120, 0.5);
 }
 
-#showcase .showcase-content .card{
-  background-color:#4f4f4f;
+#showcase .showcase-content .card {
+  background-color: #4f4f4f;
   box-shadow: 5px 5px 5px;
   border-radius: 2rem;
   padding: 4rem 2rem;
 }
 
 /* about */
-#about .items{
+#about .items {
   display: flex;
   padding: 1rem;
 }
 
-#about .items .item-1{
+#about .items .item-1 {
   flex: 1;
   padding: 1rem;
 }
 
-#about .items .item-2{
+#about .items .item-2 {
   flex: 2;
   text-align: justify;
   padding: 1rem;
 }
 
-#about .social-media{
+#about .social-media {
   padding-top: 2rem;
 }
 
 /* skills */
-#skills .items{
+#skills .items {
   display: flex;
   padding: 1rem;
 }
 
-#skills .items .item{
+#skills .items .item {
   flex: 1;
   text-align: center;
   padding: 1rem;
 }
 
 /*Contact */
-#contact .contact-form{
+#contact .contact-form {
   max-width: 600px;
   margin: auto;
   padding: 2rem;
@@ -192,22 +222,22 @@ p{
   border-radius: 1rem;
 }
 
-#contact .contact-form .form-group{
+#contact .contact-form .form-group {
   margin: .5rem;
 }
 
-#contact .contact-form label{
+#contact .contact-form label {
   display: block;
 }
 
 #contact .contact-form input,
-#contact .contact-form textarea{
+#contact .contact-form textarea {
   width: 100%;
   padding: .5rem;
 }
 
 /* Footer */
-footer{
+footer {
   background: #333;
   color: #fff;
   padding: .5rem;
