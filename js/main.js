@@ -8,12 +8,12 @@ window.addEventListener('scroll', () => {
 });
 
 // Smooth Scrolling
-$('.btn').on('click', (event) => {
+$('#navbar a, .btn').on('click', (event) => {
   if (this.hash !== '') {
     event.preventDefault();
     const hash = this.hash;
     $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 100
       },
       800
     );
