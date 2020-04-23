@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Smooth Scrolling
-$('#navbar a, .btn').on('click', (event) => {
+$('#navbar a, .btn').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
     const hash = this.hash;
