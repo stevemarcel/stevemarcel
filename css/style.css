@@ -1,12 +1,35 @@
+:root{
+  --pry-colour: #a4cb52;
+  --sec-colour: #ddefd3;
+  --light-colour: #f3f3f3;
+  --dark-colour: #333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+@font-face{
+  font-family: raleway;
+  src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face{
+  font-family: ubuntu;
+  src: url(./fonts/UbuntuCondensed-Regular.ttf);
+}
+
+@font-face{
+  font-family: staatliches;
+  src: url(./fonts/Staatliches-Regular.ttf);
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'raleway';
   line-height: 1.4;
+  background: var(--pry-colour);
 }
 
 a {
@@ -17,11 +40,17 @@ p {
   margin: .75rem 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: 'ubuntu';
+  line-height: 1.3rem;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
+  overflow: hidden;
 }
 
 .text-center {
@@ -29,7 +58,7 @@ p {
 }
 
 .text-green {
-  color: #a4cb52;
+  color: var(--pry-colour);
 }
 
 .text-white {
@@ -37,18 +66,18 @@ p {
 }
 
 .bg-light {
-  background: #f4f4f4;
-  color: #333;
+  background: var(--sec-colour);
+  color: var(--dark-colour);
 }
 
 .bg-green {
-  background: #a4cb52;
+  background: var(--pry-colour);
   color: #fff;
 }
 
 .l-heading {
   font-size: 3rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   line-height: 4rem;
 }
 
@@ -66,7 +95,7 @@ p {
 }
 
 .btn {
-  background: #a4cb52;
+  background: var(--pry-colour);
   color: #fff;
   display: inline-block;
   padding: .5rem 2rem;
@@ -81,12 +110,12 @@ p {
 
 /* Navbar */
 #navbar {
-  background: #333;
+  background: var(--dark-colour);
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -108,35 +137,46 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #a4cb52;
+  background: var(--pry-colour);
   border-radius: 5px;
 }
 
 /* showcase */
 #showcase {
-  background: #a4cb52 url('../img/showcase-bgn.jpg') no-repeat center center/cover;
+  background: var(--pry-colour);
+  position: relative;
   height: 100vh;
 }
 
+#showcase::before{
+  content: '';
+  background: url('../img/showcase-bgn.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+
 #showcase .showcase-content {
-  background-color: rgba(164, 204, 120, .5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  animation: showcaseBlur 1s ease-in;
+  animation: showcaseBlur 2s ease-in;
 }
 
 #showcase .showcase-content .card {
-  background-color: #4f4f4f;
+  background-color: var(--dark-colour);
   text-align: center;
   box-shadow: 1px 1px 7px;
   border-radius: 2rem;
   padding: 4rem 2rem;
   opacity: 0;
-  animation: card .8s forwards 1.1s ease-in;
+  animation: card 2s forwards ease-in;
 }
 
 #showcase .showcase-content .card .profile-pic img {
@@ -146,17 +186,17 @@ p {
 
 /* about */
 #about .items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
 
 #about .items .item-1 {
-  flex: 1;
   padding: 1rem;
 }
 
 #about .items .item-2 {
-  flex: 2;
+  grid-column: 2 / span 2;
   text-align: justify;
   padding: 1rem;
 }
@@ -167,19 +207,19 @@ p {
 
 /* skills */
 #skills .items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
 }
 
 #skills .items .item {
-  flex: 1;
   text-align: center;
   padding: 1rem;
 }
 
 /*Contact */
 #contact .contact-form {
-  background-color: #fff;
+  background-color: var(--light-colour);
   max-width: 600px;
   margin: auto;
   padding: 2rem;
