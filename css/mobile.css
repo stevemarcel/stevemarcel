@@ -32,3 +32,15 @@
     margin: 2rem;
   }
 }
+
+@media(max-width: 350px) {
+  #showcase .showcase-content .card {
+    padding: 3rem 2rem;
+  }
+
+  .l-heading {
+    font-size: 3rem;
+    margin: 1rem 0;
+    line-height: 3rem;
+  }
+}
