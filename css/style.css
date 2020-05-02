@@ -52,7 +52,7 @@ h6 {
 
 /* Utility Classes */
 .container {
-  max-width: 1100px;
+  max-width: 80%;
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
@@ -129,12 +129,15 @@ h6 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
   width: 100%;
+  z-index: 2;
+  animation: narvbar 3s ease forwards;
+}
+
+#navbar .container {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  animation: narvbar 3s ease forwards;
 }
 
 #navbar ul {
@@ -147,7 +150,7 @@ h6 {
   color: #fff;
   padding: .75rem;
   margin: 0 .25rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 #navbar ul li a:hover {
@@ -226,6 +229,9 @@ h6 {
 #skills .items .item {
   text-align: center;
   padding: 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  box-shadow: 1px 1px var(--light-colour);
 }
 
 /*Contact */
@@ -235,6 +241,7 @@ h6 {
   margin: auto;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 1px 1px 7px;
 }
 
 #contact .contact-form .form-group {
