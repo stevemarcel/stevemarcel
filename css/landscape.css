@@ -1,11 +1,13 @@
-#showcase .showcase-content .card {
-  margin-top: 3.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  padding: 3rem 2rem;
-}
+@media(max-width: 820px) {
+  #showcase .showcase-content .card {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 3rem 2rem;
+  }
 
-#showcase .showcase-content .card .basic-info {
-  grid-column: 2 / span 2;
+  #showcase .showcase-content .card .basic-info {
+    grid-column: 2 / span 2;
+  }
 }
