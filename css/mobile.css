@@ -1,7 +1,8 @@
 /* Ipad */
-.container{
+.container {
   max-width: 100%;
 }
+
 #about .items {
   display: block;
   padding: 1rem;
@@ -22,15 +23,24 @@
     padding: 0.5rem
   }
 
-  #skills .items {
+  #skills .skill-section .skill-items {
     display: block;
     padding: 1rem;
   }
 
-  #skills .items .item {
+  #skills .skill-section .skill-items .item {
     margin-bottom: 2rem;
     text-align: center;
-    box-shadow: 1px 1px 3px var(--sec-colour);
+    box-shadow: 1px 1px 3px;
+  }
+
+  #skills .skill-section .skill-level {
+    display: block;
+    padding: 1rem;
+  }
+
+  #skills .skill-section .skill-level .skill-bar {
+    width: 100%;
   }
 
   #contact .contact-form {

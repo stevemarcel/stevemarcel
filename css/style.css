@@ -34,6 +34,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 p {
@@ -48,6 +49,29 @@ h5,
 h6 {
   font-family: 'ubuntu';
   line-height: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+  line-height: 2;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: .5rem;
+  border-radius: .25rem;
+  border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0aec0;
 }
 
 /* Utility Classes */
@@ -70,14 +94,14 @@ h6 {
   color: #fff;
 }
 
-.bg-light {
+.bg-sec {
   background: var(--sec-colour);
   color: var(--dark-colour);
 }
 
 .bg-green {
   background: var(--pry-colour);
-  color: #fff;
+  color: var(--dark-colour);
 }
 
 .l-heading {
@@ -99,6 +123,10 @@ h6 {
   padding: 2rem 0;
 }
 
+.pl-05 {
+  padding-left: .5rem;
+}
+
 .btn {
   background: var(--pry-colour);
   color: #fff;
@@ -112,6 +140,7 @@ h6 {
 
 .btn:hover {
   background: #7ab436;
+  outline: none;
 }
 
 .card {
@@ -120,6 +149,11 @@ h6 {
   text-align: center;
   border-radius: 2rem;
   padding: 4rem 2rem;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
 }
 
 /* Navbar */
@@ -220,18 +254,70 @@ h6 {
 }
 
 /* skills */
-#skills .items {
+#skills .skill-section .skill-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column: 1 / span 2;
   padding: 1rem;
 }
 
-#skills .items .item {
+#skills .skill-section .skill-items .item {
+  color: var(--dark-colour);
   text-align: center;
   padding: 1rem;
   border-radius: 1rem;
   margin: 0 auto;
-  box-shadow: 1px 1px var(--light-colour);
+  box-shadow: 1px 1px 7px var(--dark-colour);
+}
+
+#skills .skill-section .skill-level {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+#skills .skill-section .skill-level .skill-bar {
+  width: 90%;
+  background: var(--sec-colour);
+  color: var(--dark-colour);
+  font-size: .6rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px var(--dark-colour);
+}
+
+#skills .skill-section .skill-level .skill-bar .skills {
+  text-align: right;
+  padding: 6px 0;
+  font-size: .7rem;
+  box-shadow: 1px 1px 15px var(--dark-colour);
+  border-radius: 5px;
+}
+
+#skills .skill-section .skill-level .skill-bar .stephen-html,
+#skills .skill-section .skill-level .skill-bar .stephen-css {
+  width: 90%;
+  background: var(--pry-colour);
+}
+
+#skills .skill-section .skill-level .skill-bar .stephen-js {
+  width: 70%;
+  background: var(--pry-colour);
+}
+
+#skills .skill-section .skill-level .skill-bar .stephen-bootstrap {
+  width: 60%;
+  background: var(--pry-colour);
+}
+
+#skills .skill-section .skill-level .skill-bar .stephen-materialize {
+  width: 30%;
+  background: var(--pry-colour);
+}
+
+#skills .skill-section .skill-level .skill-bar .stephen-sass {
+  width: 50%;
+  background: var(--pry-colour);
 }
 
 /*Contact */
@@ -246,16 +332,6 @@ h6 {
 
 #contact .contact-form .form-group {
   margin: .5rem;
-}
-
-#contact .contact-form label {
-  display: block;
-}
-
-#contact .contact-form input,
-#contact .contact-form textarea {
-  width: 100%;
-  padding: .5rem;
 }
 
 /* Thank you */
