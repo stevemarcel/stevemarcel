@@ -10,4 +10,32 @@
   #showcase .showcase-content .card .basic-info {
     grid-column: 2 / span 2;
   }
+
+  #skills .skill-section .skill-level {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  #skills .skill-section .skill-level .skill-bar {
+    width: 100%;
+  }
+
+}
+
+@media(max-width: 600px) {
+  #skills .skill-section .skill-items {
+    display: block;
+    padding: 1rem;
+  }
+
+  #skills .skill-section .skill-items .item {
+    width: 60%;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 1px 1px 3px;
+  }
+
+  #contact .contact-form {
+    margin: 2rem;
+  }
 }
