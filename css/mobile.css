@@ -1,4 +1,7 @@
 /* Ipad */
+.container{
+  max-width: 100%;
+}
 #about .items {
   display: block;
   padding: 1rem;
@@ -6,7 +9,7 @@
 
 /* Smartphones */
 @media(max-width: 500px) {
-  #navbar {
+  #navbar .container {
     flex-direction: column;
     align-items: center;
   }
@@ -25,7 +28,9 @@
   }
 
   #skills .items .item {
+    margin-bottom: 2rem;
     text-align: center;
+    box-shadow: 1px 1px 3px var(--sec-colour);
   }
 
   #contact .contact-form {
