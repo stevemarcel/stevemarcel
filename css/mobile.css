@@ -3,30 +3,32 @@
   max-width: 100%;
 }
 
-#showcase .showcase-content .card {
-  margin-top: 3.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  padding: 3rem 2rem;
-}
+@media(max-width: 800px) {
+  #showcase .showcase-content .card {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 3rem 2rem;
+  }
 
-#showcase .showcase-content .card .basic-info {
-  grid-column: 2 / span 2;
-}
+  #showcase .showcase-content .card .basic-info {
+    grid-column: 2 / span 2;
+  }
 
-#skills .skill-section .skill-level {
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
+  #skills .skill-section .skill-level {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
 
-#skills .skill-section .skill-level .skill-bar {
-  width: 100%;
-}
+  #skills .skill-section .skill-level .skill-bar {
+    width: 100%;
+  }
 
-#about .items {
-  display: block;
-  padding: 1rem;
+  #about .items {
+    display: block;
+    padding: 1rem;
+  }
 }
 
 /* Smartphones */
