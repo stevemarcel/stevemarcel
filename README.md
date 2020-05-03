@@ -11,3 +11,7 @@ My personal profile page.
 ### mobile view
 
 ![mobile page view](./img/StephenOnyejuluwa-mobile-scrn.jpg)
+
+## Author
+
+[stevemarcel](https://stevemarcel.github.io/stevemarcel)
