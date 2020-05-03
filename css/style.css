@@ -225,9 +225,13 @@ textarea::placeholder {
   animation: card 2s forwards ease-in;
 }
 
-#showcase .showcase-content .card .profile-pic img {
+#showcase .showcase-content .card .profile-pic {
   width: 180px;
   height: 180px;
+  display: inline-block;
+}
+
+#showcase .showcase-content .card .profile-pic img {
   border-radius: 50%;
   box-shadow: 1px 1px 7px;
 }
