@@ -1,6 +1,8 @@
 # personal_profile
 
-My personal profile page.
+My personal profile page. This site was built using different methods.
+(1) flexbox.
+(2) gridbox.
 
 ## page layout design
 
