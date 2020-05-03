@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: raleway;
+  font-family: stephen-raleway;
   src: url(./fonts/Raleway-Regular.ttf);
 }
 
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: 'raleway';
+  font-family: 'stephen-raleway';
   line-height: 1.4;
   background: var(--pry-colour);
 }
