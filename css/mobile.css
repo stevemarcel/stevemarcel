@@ -1,9 +1,10 @@
-/* Ipad */
+/* Ipad Pro*/
 .container {
   max-width: 100%;
 }
 
-@media(max-width: 800px) {
+/* Ipad */
+@media(max-width: 820px) {
   #showcase .showcase-content .card {
     margin-top: 3.5rem;
     display: grid;
@@ -67,9 +68,15 @@
   }
 }
 
+@media(max-width: 500px){
+  #showcase .showcase-content .card {
+    display: block;
+  }
+}
+
 @media(max-width: 350px) {
   #showcase .showcase-content .card {
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
 
   .l-heading {
