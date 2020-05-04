@@ -351,7 +351,7 @@ textarea {
   background-color: var(--light-colour);
   border-radius: 1rem;
   box-shadow: 1px 1px 7px;
-  margin: auto;
+  margin: 3rem auto auto;
   max-width: 600px;
   padding: 2rem;
 }
