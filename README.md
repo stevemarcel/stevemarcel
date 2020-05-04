@@ -6,14 +6,24 @@ My personal profile page. This site was built using different methods.
 
 ## page layout design
 
-### desktop view
+### desktop view version 1.02.44
 
 ![desktop page view](./img/StephenOnyejuluwa-laptop-scrn.jpg)
 
-### mobile view
+### desktop view version 1.12.04.26
+
+![desktop page viewversion 1.12.04.26](./img/StephenOnyejuluwa-laptop-scrn-v1-12-04-26.jpg)
+
+### mobile view version 1.02.44
 
 ![mobile page view](./img/StephenOnyejuluwa-mobile-scrn.jpg)
 
+### mobile view version 1.12.04.26
+
+![mobile page view version 1.12.04.26](./img/StephenOnyejuluwa-mobile-scrn-v1-12-04-26.jpg)
+
 ## Author
+
+![stevemarcel](./img/stevemarcel.jpg)
 
 [stevemarcel](https://stevemarcel.github.io/stevemarcel)
