@@ -69,9 +69,30 @@ textarea {
   border: none;
 }
 
+textarea {
+  height: 100px;
+  resize: none;
+}
+
 input::placeholder,
 textarea::placeholder {
   color: #a0aec0;
+}
+
+/* to remove arrows/spinners from input type="number" for chrome, safari, edge, opera*/
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/* to remove arrows/spinners from input type="number" for firefox*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--pry-colour);
 }
 
 /* Utility Classes */
