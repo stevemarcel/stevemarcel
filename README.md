@@ -24,4 +24,4 @@ My personal profile page. This site was built using different methods.
 
 ## Author
 
-[stevemarcel](https://stevemarcel.github.io/stevemarcel)
+[stevemarcel](https://github.com/stevemarcel)
