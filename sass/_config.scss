@@ -1,0 +1,29 @@
+// $pry__color:;
+// $sec__color:;
+$grey__color: #c4c4c4;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $grey__color;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  main {
+    flex: 1 0 auto;
+  }
+}
+
+@mixin transition__ease-in-out {
+  transition: all .5s ease-in-out;
+}
