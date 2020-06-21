@@ -1,4 +1,26 @@
 /*******************************
+CUSTOM FONTS
+*******************************/
+@font-face {
+  font-family: stephen__raleway;
+  src: url('../assets/fonts/Raleway.ttf');
+}
+
+@font-face {
+  font-family: stephen__axis;
+  src: url('../assets/fonts/axis.otf');
+}
+
+
+/*******************************
+MIXINS
+*******************************/
+@mixin transition__ease-in-out {
+  transition: all .5s ease-in-out;
+}
+
+
+/*******************************
 VARIABLES
 *******************************/
 $green: #0fa439;
@@ -11,7 +33,7 @@ a {
   @include transition__ease-in-out;
 
   &:hover {
-    color: darken($color: $green, $amount: 10%) !important;
+    color: darken($color: $green, $amount: 10%);
   }
 }
 
@@ -34,35 +56,4 @@ body {
     flex: 1 0 auto;
 
   }
-}
-
-/*******************************
-CUSTOM CLASSES
-*******************************/
-.stephen__container {
-  max-width: 90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.stephen__active {
-  background-color: transparent !important;
-  color: $green !important;
-}
-
-/*******************************
-CUSTOM FONTS
-*******************************/
-@font-face {
-  font-family: stephen__raleway;
-  src: url('../assets/fonts/Raleway.ttf');
-}
-
-@font-face {
-  font-family: stephen__axis;
-  src: url('../assets/fonts/axis.otf');
-}
-
-@mixin transition__ease-in-out {
-  transition: all .5s ease-in-out;
 }

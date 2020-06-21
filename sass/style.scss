@@ -1,12 +1,14 @@
 @import 'config';
 @import 'breakpoints';
+@import 'customClasses';
 
 body {
+  font-family: 'stephen__raleway';
   nav {
     box-shadow: none !important;
 
     a {
-      color: $black !important;
+      color: $black;
       @include transition__ease-in-out;
 
       &:hover {
@@ -17,7 +19,18 @@ body {
 
     .brand-logo {
       font-family: 'stephen__axis';
+      @include brkpt (mobile) {
+        font-size: 1rem;
+      }
     }
+
+    .hamburger{
+      color: $green;
+      @include brkpt (tab) {
+        font-size: 2rem;
+      }
+    }
+
   }
 
   #mobile__nav {
@@ -28,6 +41,25 @@ body {
 
     .nav__main {
       flex: 1 0 auto;
+    }
+  }
+
+  #floating__btn{
+    a {
+      color: $white;
+      @include transition__ease-in-out;
+    
+      &:hover {
+        color: darken($color: $white, $amount: 5%);
+        background-color: darken($color: $green, $amount: 5%);
+      }
+    }
+  }
+
+  footer{
+    font-size: .75rem;
+    .row{
+      margin-bottom: 0 ;
     }
   }
 }

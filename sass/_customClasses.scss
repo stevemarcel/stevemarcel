@@ -1,0 +1,30 @@
+/*******************************
+CUSTOM CLASSES
+*******************************/
+.stephen {
+  &__container {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  &__active {
+    background-color: transparent !important;
+    color: $green !important;
+  }
+
+  &__bg-green{
+    background-color: $green;
+  }
+  &__px-1 {
+    padding: 0 1rem;
+  }
+
+  &__py-1 {
+    padding: 1.5rem 0;
+  }
+
+  &__py-2 {
+    padding: 2rem 0;
+  }
+}
