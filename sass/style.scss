@@ -1,1 +1,33 @@
 @import 'config';
+@import 'breakpoints';
+
+body {
+  nav {
+    box-shadow: none !important;
+
+    a {
+      color: $black !important;
+      @include transition__ease-in-out;
+
+      &:hover {
+        background-color: transparent !important;
+        color: $green !important;
+      }
+    }
+
+    .brand-logo {
+      font-family: 'stephen__axis';
+    }
+  }
+
+  #mobile__nav {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .nav__main {
+      flex: 1 0 auto;
+    }
+  }
+}

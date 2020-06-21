@@ -1,16 +1,27 @@
-// $pry__color:;
-// $sec__color:;
-$grey__color: #c4c4c4;
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/*******************************
+VARIABLES
+*******************************/
+$green: #0fa439;
+$black: #0f0f0f;
+$white: #f4f4f4;
+$grey: #898989;
 
 a {
-  color: $grey__color;
-  text-decoration: none;
+  color: $green;
+  @include transition__ease-in-out;
+
+  &:hover {
+    color: darken($color: $green, $amount: 10%) !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'stephen__axis'
 }
 
 body {
@@ -21,7 +32,35 @@ body {
 
   main {
     flex: 1 0 auto;
+
   }
+}
+
+/*******************************
+CUSTOM CLASSES
+*******************************/
+.stephen__container {
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.stephen__active {
+  background-color: transparent !important;
+  color: $green !important;
+}
+
+/*******************************
+CUSTOM FONTS
+*******************************/
+@font-face {
+  font-family: stephen__raleway;
+  src: url('../assets/fonts/Raleway.ttf');
+}
+
+@font-face {
+  font-family: stephen__axis;
+  src: url('../assets/fonts/axis.otf');
 }
 
 @mixin transition__ease-in-out {
