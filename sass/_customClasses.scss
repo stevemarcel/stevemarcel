@@ -13,9 +13,18 @@ CUSTOM CLASSES
     color: $green !important;
   }
 
-  &__bg-green{
+  &__axis-font {
+    font-family: 'stephen__axis';
+  }
+
+  &__bg-green {
     background-color: $green;
   }
+
+  &__icon-size{
+    width: 15px;
+  }
+
   &__px-1 {
     padding: 0 1rem;
   }
@@ -26,5 +35,9 @@ CUSTOM CLASSES
 
   &__py-2 {
     padding: 2rem 0;
+  }
+
+  &__text-green {
+    color: $green;
   }
 }

@@ -16,4 +16,10 @@
       @content;
     }
   }
+
+  @else if $pt==largedesktop {
+    @media (min-width: 1270px) {
+      @content;
+    }
+  }
 }
