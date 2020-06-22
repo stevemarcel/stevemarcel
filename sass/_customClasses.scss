@@ -17,27 +17,57 @@ CUSTOM CLASSES
     font-family: 'stephen__axis';
   }
 
-  &__bg-green {
-    background-color: $green;
+  &__raleway-font {
+    font-family: 'stephen__raleway';
   }
 
-  &__icon-size{
+  &__bg-green {
+    background-color: $green;
+    color: $white;
+  }
+
+  &__bg-white {
+    background-color: $white;
+    color: $green;
+  }
+
+  &__icon-size {
     width: 15px;
   }
 
+  &__pb-1 {
+    margin-bottom: 1vh;
+  }
+
+  &__pb-3 {
+    margin-bottom: 3vh;
+  }
+
+  &__pt-2 {
+    margin-top: 2vh;
+  }
+
   &__px-1 {
-    padding: 0 1rem;
+    padding: 0 1vw;
+  }
+
+  &__px-2 {
+    padding: 0 2vw;
   }
 
   &__py-1 {
-    padding: 1.5rem 0;
+    padding: 1.5vh 0;
   }
 
   &__py-2 {
-    padding: 2rem 0;
+    padding: 2vh 0;
   }
 
   &__text-green {
     color: $green;
+  }
+
+  &__text-white {
+    color: $white;
   }
 }

@@ -123,6 +123,42 @@ body {
     }
   }
 
+  #form {
+
+    input[type=text]:not(.browser-default),
+    input[type=number]:not(.browser-default),
+    input[type=email]:not(.browser-default),
+    textarea[type=text]:not(.browser-default) {
+      border-bottom: 1px solid $white;
+      color: $white;
+      font-family: 'stephen__raleway';
+    }
+
+    /* to remove arrows/spinners from input type="number" for chrome, safari, edge, opera*/
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    /* to remove arrows/spinners from input type="number" for firefox*/
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    label {
+      color: darken($color: $white, $amount: 20%);
+
+      &:not(.label-icon).active {
+        color: $white;
+      }
+    }
+
+    .btn:hover {
+      background-color: darken($color: $white, $amount: 10%);
+      color: darken($color: $green, $amount: 10%);
+    }
+  }
+
   #floating__btn {
     a {
       color: $white;
