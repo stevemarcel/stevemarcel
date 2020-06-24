@@ -1,0 +1,57 @@
+/*******************************
+CUSTOM FONTS
+*******************************/
+@font-face {
+  font-family: stephen__raleway;
+  src: url('../assets/fonts/Raleway.ttf');
+}
+
+@font-face {
+  font-family: stephen__axis;
+  src: url('../assets/fonts/axis.otf');
+}
+
+/*******************************
+MIXINS
+*******************************/
+@mixin transition__ease-in-out {
+  transition: all .5s ease-in-out;
+}
+
+/*******************************
+VARIABLES
+*******************************/
+$green: #0fa439;
+$black: #0f0f0f;
+$white: #f4f4f4;
+$grey: #898989;
+
+a {
+  color: $green;
+  @include transition__ease-in-out;
+
+  &:hover {
+    color: darken($color: $green, $amount: 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'stephen__axis'
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  main {
+    flex: 1 0 auto;
+
+  }
+}

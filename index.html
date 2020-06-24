@@ -4,249 +4,320 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" media="screen and (max-width: 1100px)" href="./css/mobile.css" />
+  <!-- Css links -->
+  <link type="text/css" rel="stylesheet" href="./css/fontawesome__all.min.css" />
+  <link type="text/css" rel="stylesheet" href="./css/materialize.min.css" />
+  <link type="text/css" rel="stylesheet" href="./css/style.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/shark_favicon.ico" />
   <title>Stephen Onyejuluwa</title>
 </head>
 
-<body>
-  <div class="stephen-container">
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="container">
-        <h1 class="logo">
-          <a href="#"><span class="text-green">Steve</span><span class="text-white">Marcel</span></a>
-        </h1>
-        <ul>
-          <li><a href="#showcase">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<body class="grey lighten-4">
+  <!-- Nav Bar -->
+  <div class="navbar-fixed">
+    <nav class="stephen__bg-white">
+      <div class="stephen__container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo black-text">Stephen Onyejuluwa</a>
+          <a href="#" data-target="mobile__nav" class="hamburger sidenav-trigger">
+            <i class="fas fa-hamburger"></i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="stephen__active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
+  </div>
+  <!-- Mobile Nav -->
+  <ul class="sidenav" id="mobile__nav">
+    <div class="nav__main">
+      <li><a href="index.html" class="stephen__active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+    <div class="nav_footer center stephen__py-2">
+      <a href="https://github.com/stevemarcel" target="_blank" class="stephen__px-5 black-text">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/onyejuluwa-stephen-098733190" target="_blank"
+        class="stephen__px-5 blue-text text-darken-2">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://instagram.com/_shark_colours" target="_blank" class="stephen__px-5 pink-text">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </ul>
 
-    <!-- showcase -->
-    <header id="showcase">
-      <div class="showcase-content">
-        <div class="card">
-          <div class="profile-pic">
-            <img src="./img/stevemarcel.jpg" alt="Stephen Onyejuluwa" />
-          </div>
-          <div class="basic-info">
-            <h1 class="l-heading text-white">Stephen Onyejuluwa</h1>
-            <h3 class="m-heading text-green">Web Developer/ Designer</h3>
-            <h3 class="m-heading text-green">Lagos, Nigeria.</h3>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="bg-sec py-1">
-      <div class="container">
-        <h2 class="l-heading text-center">
-          <span class="text-green">About</span> Me
-        </h2>
-        <div class="items">
-          <div class="item-1">
-            <div>
+  <main>
+    <div class="stephen__container">
+      <div class="row stephen__pt-2">
+        <div class="col s12 m6 l4">
+          <!-- Profile -->
+          <section id="profile">
+            <div class="profile__img center">
+              <img src="./assets/img/stevemarcel.jpg" alt="Stephen Onyejuluwa" class="circle responsive-img">
+            </div>
+            <div class="profile__header center">
+              <h5>
+                <span class="stephen__text-green">Electrical Engineer</span>
+              </h5>
+              <h6>Frontend Developer</h6>
+              <h6>Graphics Designer</h6>
+            </div>
+            <div class="profile__info ">
               <p><b>Full Name:</b> Stephen Ntochukwu Onyejuluwa</p>
               <p>
-                <b>Address:</b> 15, Foursquare rd, Orisunbare, Idimu, Lagos,
-                Nigeria
+                <b>Address:</b> 15, Foursquare avenue, Orisunbare, Idimu, Lagos,
+                Nigeria.
               </p>
-              <p><b>Year Of Birth:</b> late 90's</p>
-              <p><b>State Of Origin:</b> Anambra, Nigeria</p>
+              <p><b>Date Of Birth:</b> 26th December.</p>
+              <p><b>Sex:</b> Male.</p>
+              <p><b>State Of Origin:</b> Anambra State, Nigeria.</p>
+              <p><b>Spoken languages:</b> English, Igbo and Pidgin.</p>
               <p><b>Email:</b> just.stevemarcel@gmail.com</p>
               <p><b>Phone Number:</b> 08144377069</p>
-              <p><b>Slack Username:</b> stevemarcel</p>
             </div>
-          </div>
-          <div class="item-2">
-            <div>
-              <h3><b>Hello there!</b></h3>
-              <p>
-                Stephen Onyejuluwa is a junior frontend web developer based in
-                Lagos, Nigeria. Until recently, he was an electric meter
-                engineer at Mojec International Limited, an engineering
-                company manufacturing and installing prepaid meters in
-                different African cities.
-              </p>
-              <p>
-                Prior to Mojec International Limited, he worked as an intern
-                with the Federal Airport Authorities of Nigeria, Lagos;
-                electrical department.
-              </p>
-              <p>
-                Outside the programming and engineering world, Stephen enjoys
-                reading and drawing Japanese manga. He also loves cooking and
-                playing chess. In between all these, he is always eager to
-                make the next person smile with his little commentaries.
-              </p>
-              <p>
-                Stephen has a bachelor in Electrical Engineering from the
-                University of Nigeria, Nsukka. He strives to help create
-                startups in the ever growing IT and electric markets, with a
-                special focus on Nigeria and Africa. He strongly believes that
-                the not so distant future will be written in tech. Therefore,
-                the time to begin mass development into the IT world is now,
-                for there is no better time than the present.
-              </p>
+          </section>
+        </div>
+        <div class="col s12 m6 l8">
+          <!-- About -->
+          <section id="about">
+            <h6><span class="stephen__axis-font">Hello there!</span></h6>
+            <p>
+              Stephen Onyejuluwa is a junior frontend web developer based in
+              Lagos, Nigeria. Until recently, he was an electric meter
+              engineer at Mojec International Limited, an engineering
+              company manufacturing and installing prepaid meters in
+              different African cities.
+            </p>
+            <p>
+              Prior to Mojec International Limited, he worked as an intern
+              with the Federal Airport Authorities of Nigeria, Lagos;
+              electrical department.
+            </p>
+            <p>
+              Outside the programming and engineering world, Stephen enjoys
+              reading and drawing Japanese manga. He also loves cooking and
+              playing chess. In between all these, he is always eager to
+              make the next person smile with his little commentaries.
+            </p>
+            <p>
+              Stephen has a bachelor in Electrical Engineering from the
+              University of Nigeria, Nsukka. He strives to help create
+              startups in the ever growing IT and electric markets, with a
+              special focus on Nigeria and Africa. He strongly believes that
+              the not so distant future will be written in tech. Therefore,
+              the time to begin mass development into the IT world is now,
+              for there is no better time than the present.
+            </p>
+          </section>
+          <!-- Skills -->
+          <section id="skills">
+            <h6><span class="stephen__axis-font">Skills</span></h6>
+            <div class="row">
+              <div class="col s12 l3 html">
+                <p>
+                  <i class="fab fa-html5"></i> HTML 5 <span class="stephen__text-green">(90%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 css">
+                <p>
+                  <i class="fab fa-css3-alt"></i> CSS 3 <span class="stephen__text-green">(90%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 js">
+                <p>
+                  <i class="fab fa-js-square"></i> Javascript <span class="stephen__text-green">(70%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 bs">
+                <p>
+                  <i class="fab fa-bootstrap"></i> Bootstrap 4 <span class="stephen__text-green">(70%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 materialize">
+                <p>
+                  <img src="./assets/icons/materializecss.png" class="responsive-img stephen__icon-size"> Materialize
+                  <span class="stephen__text-green">(70%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 sass">
+                <p>
+                  <i class="fab fa-sass"></i> SASS <span class="stephen__text-green">(70%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 ai">
+                <p>
+                  <img src="./assets/icons/Adobe_illustrator.png" class="responsive-img stephen__icon-size"> Illustrator
+                  <span class="stephen__text-green">(90%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 ps">
+                <p>
+                  <img src="./assets/icons/Adobe_photoshop.png" class="responsive-img stephen__icon-size"> Photoshop
+                  <span class="stephen__text-green">(50%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 figma">
+                <p>
+                  <i class="fab fa-figma"></i> Figma <span class="stephen__text-green">(40%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 metering">
+                <p>
+                  <img src="./assets/icons/Electrical_Metering.png" class="responsive-img stephen__icon-size"> Metering
+                  <span class="stephen__text-green">(90%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 wiring">
+                <p>
+                  <img src="./assets/icons/Electrical_Wiring.png" class="responsive-img stephen__icon-size"> wiring
+                  <span class="stephen__text-green">(70%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 proteus">
+                <p>
+                  <img src="./assets/icons/Proteus.png" class="responsive-img stephen__icon-size"> Proteus <span
+                    class="stephen__text-green">(50%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 ac">
+                <p>
+                  <img src="./assets/icons/autocad.png" class="responsive-img stephen__icon-size"> AutoCAD
+                  <span class="stephen__text-green">(40%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 matlab">
+                <p>
+                  <img src="./assets/icons/Matlab.png" class="responsive-img stephen__icon-size"> Matlab <span
+                    class="stephen__text-green">(40%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 arduino">
+                <p>
+                  <img src="./assets/icons/arduino.png" class="responsive-img stephen__icon-size"> Arduino <span
+                    class="stephen__text-green">(40%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
+              <div class="col s12 l3 leader">
+                <p>
+                  <i class="fas fa-fist-raised"></i> Leadership <span class="stephen__text-green">(90%)</span>
+                </p>
+                <div class="progress">
+                  <div class="determinate percent"></div>
+                </div>
+              </div>
             </div>
-            <div class="social-media">
-              <a href="https://www.twitter.com/@_stevemarcel" target="blank">
-                <img src="./img/icons/twt-grn.png" alt="twitter" width="50" />
-              </a>
-              <a href="https://www.facebook.com/onyejuluwa.stephen" target="blank">
-                <img src="./img/icons/fbk-grn.png" alt="facebook" width="50" />
-              </a>
-              <a href="https://www.github.com/stevemarcel" target="blank">
-                <img src="./img/icons/github-grn.png" alt="github" width="50" />
-              </a>
-              <a href="#">
-                <img src="./img/icons/in-grn.png" alt="linkden" width="50" />
-              </a>
-              <a href="https://www.instagram.com/_stevemarcel" target="blank">
-                <img src="./img/icons/intg-grn.png" alt="instagram" width="50" />
-              </a>
-              <a href="https://wa.me/2348144377069" target="blank">
-                <img src="./img/icons/wta-grn.png" alt="whatsapp" width="50" />
-              </a>
-            </div>
-          </div>
+          </section>
+          <!-- Hobbies -->
+          <section id="hobbies">
+            <h6><span class="stephen__axis-font">Hobbies</span></h6>
+            <p>
+              Drawing, reading,cooking, baking, playing video games, chess and soccer, driving, meeting people and
+              surfing the internet.
+            </p>
+          </section>
         </div>
       </div>
-    </section>
-
-    <!-- skills -->
-    <section id="skills" class="bg-green py-1">
-      <div class="container">
-        <h2 class="l-heading text-center">Skills</h2>
-        <div class="skill-section">
-          <div class="skill-items vertical-center">
-            <div class="item bg-sec">
-              <div>
-                <div class="design-logo">
-                  <img src="./img/icons/designer-grn.png" alt="designer" width="125" />
-                </div>
-                <h1>Design</h1>
-              </div>
-            </div>
-            <div class="item bg-sec">
-              <div>
-                <div class="webDev-logo">
-                  <img src="./img/icons/webDev-grn.png" alt="wed-dev" width="125" />
-                </div>
-                <h1>Web development</h1>
-              </div>
-            </div>
-            <div class="item bg-sec">
-              <div>
-                <div class="digital-marketing-logo">
-                  <img src="./img/icons/digMag.png" alt="digital-marketing" width="125" />
-                </div>
-                <h1>Digital-Marketing</h1>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill-level py-2">
-            <div class="cover">
-              <p>HTML</p>
-              <div class="skill-bar">
-                <div class="skills stephen-html"></div>
-                <span class="pl-05">90%</span>
-              </div>
-            </div>
-            <div class="cover">
-              <p>CSS</p>
-              <div class="skill-bar">
-                <div class="skills stephen-css"></div>
-                <span class="pl-05">90%</span>
-              </div>
-            </div>
-            <div class="cover">
-              <p>JavaScript</p>
-              <div class="skill-bar">
-                <div class="skills stephen-js"></div>
-                <span class="pl-05">70%</span>
-              </div>
-            </div>
-            <div class="cover">
-              <p>Bootstrap4</p>
-              <div class="skill-bar">
-                <div class="skills stephen-bootstrap"></div>
-                <span class="pl-05">60%</span>
-              </div>
-            </div>
-            <div class="cover">
-              <p>Materialize</p>
-              <div class="skill-bar">
-                <div class="skills stephen-materialize"></div>
-                <span class="pl-05">30%</span>
-              </div>
-            </div>
-            <div class="cover">
-              <p>SASS</p>
-              <div class="skill-bar">
-                <div class="skills stephen-sass"></div>
-                <span class="pl-05">50%</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Floating contact icon -->
+      <div id="floating__btn" class="fixed-action-btn valign-wrapper">
+        <a class="stephen__bg-green btn-floating btn hide-on-med-and-down">
+          <i class="fas fa-address-card"></i>
+        </a>
+        <ul>
+          <li class="valign-wrapper">
+            <a href="https://github.com/stevemarcel" target="_blank" class="btn-floating btn-small black">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="valign-wrapper">
+            <a href="https://linkedin.com/in/onyejuluwa-stephen-098733190" target="_blank"
+              class="btn-floating btn-small blue darken-2">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="valign-wrapper">
+            <a href="https://instagram.com/_shark_colours" target="_blank"
+              class="btn-floating btn-small pink lighten-5 pink-text text-lighten-2">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </main>
 
-    <!-- Contact -->
-    <section id="contact" class="bg-sec py-2">
-      <div class="contact-form">
-        <h2 class="l-heading text-center">Let's Talk</h2>
-        <form action="https://submit-form.com/TExL_1QCqZoIYyOOH_QvM">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" name="name" placeholder="Enter Full Name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter Email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="number" name="phone" placeholder="Enter Phone Number" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea type="text" name="message" placeholder="Enter Message..." required></textarea>
-          </div>
-          <button type="submit" class="btn">Send</button>
-          <input type="hidden" name="_redirect" value="https://stevemarcel.github.io/stevemarcel/thankYou.html" />
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-      <div class="container">
+  <!-- Footer -->
+  <footer class="footer center">
+    <div class="row">
+      <div class="col s12 m4 offset-m4">
         <p>Stevemarcel, Coppyright &copy; 2020</p>
+      </div>
+      <div class="col s12 m4">
         <p>
           (Created by
           <a href="https://github.com/stevemarcel" target="_blank">
-            Shark Colours
-          </a>
-          <!-- &nbsp;
+            <i>Shark Dev</i> </a>&nbsp;
           <a href="https://wa.me/2349048505151" target="_blank">
-            <i class="fab fa-whatsapp"></i> </a>&nbsp;-->
-          )
+            <i class="fab fa-whatsapp"></i> </a>)
         </p>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
+  <!-- Scripts -->
+  <script type="text/javascript" src="./js/fontawesome_all.min.js"></script>
+  <script type="text/javascript" src="./js/materialize.min.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
 </body>
 
 </html>

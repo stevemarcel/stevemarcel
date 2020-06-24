@@ -1,0 +1,25 @@
+@mixin brkpt ($pt) {
+  @if $pt==mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @else if $pt==tab {
+    @media (min-width: 601px) {
+      @content;
+    }
+  }
+
+  @else if $pt==desktop {
+    @media (min-width: 990px) {
+      @content;
+    }
+  }
+
+  @else if $pt==largedesktop {
+    @media (min-width: 1270px) {
+      @content;
+    }
+  }
+}

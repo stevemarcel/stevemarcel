@@ -1,0 +1,94 @@
+/*******************************
+CUSTOM CLASSES
+*******************************/
+.stephen {
+  &__container {
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  &__active {
+    background-color: transparent;
+    color: $green !important;
+  }
+
+  &__axis-font {
+    font-family: 'stephen__axis';
+  }
+
+  &__bg-green {
+    background-color: $green;
+    color: $white;
+  }
+
+  &__bg-white {
+    background-color: $white;
+    color: $green;
+  }
+
+  &__hide-on-large-and-down {
+    @include brkpt (mobile) {
+      display: none;
+    }
+
+    @include brkpt (tab) {
+      display: none;
+    }
+
+    @include brkpt (desktop) {
+      display: none;
+    }
+
+    @include brkpt (largedesktop) {
+      display: block;
+    }
+  }
+
+  &__icon-size {
+    width: 15px;
+  }
+
+  &__pb-1 {
+    margin-bottom: 1vh;
+  }
+
+  &__pb-3 {
+    margin-bottom: 3vh;
+  }
+
+  &__pt-2 {
+    margin-top: 2vh;
+  }
+
+  &__px-1 {
+    padding: 0 1vw;
+  }
+
+  &__px-2 {
+    padding: 0 2vw;
+  }
+  &__px-5 {
+    padding: 0 5vw;
+  }
+
+  &__py-1 {
+    padding: 1.5vh 0;
+  }
+
+  &__py-2 {
+    padding: 2vh 0;
+  }
+
+  &__raleway-font {
+    font-family: 'stephen__raleway';
+  }
+
+  &__text-green {
+    color: $green;
+  }
+
+  &__text-white {
+    color: $white;
+  }
+}

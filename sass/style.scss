@@ -1,0 +1,187 @@
+@import 'config';
+@import 'breakpoints';
+@import 'customClasses';
+
+body {
+  font-family: 'stephen__raleway';
+
+  .btn:hover,
+  .btn-small:hover,
+  .btn-floating:hover {
+    background-color: darken($color: $green, $amount: 5%);
+    color: darken($color: $white, $amount: 5%);
+  }
+
+  nav {
+    box-shadow: none;
+
+    a {
+      color: $black;
+      @include transition__ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+        color: $green;
+      }
+    }
+
+    .brand-logo {
+      font-family: 'stephen__axis';
+
+      @include brkpt (mobile) {
+        font-size: 1rem;
+      }
+    }
+
+    .hamburger {
+      color: $green;
+
+      @include brkpt (tab) {
+        font-size: 2rem;
+      }
+    }
+
+  }
+
+  #mobile__nav {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    .nav__main {
+      flex: 1 0 auto;
+    }
+  }
+
+  #profile {
+    .profile__img {
+      img {
+        height: 30vh;
+        box-shadow: $green -1px 1px 7px;
+
+        @include brkpt (tab) {
+          height: 20vh;
+        }
+
+        @include brkpt (largedesktop) {
+          height: 40vh;
+        }
+      }
+    }
+  }
+
+  #skills {
+
+    .html,
+    .css,
+    .ai,
+    .metering,
+    .leader {
+      .progress {
+        background-color: $grey;
+
+        .percent {
+          background-color: $green;
+          width: 90%;
+        }
+      }
+    }
+
+    .js,
+    .bs,
+    .materialize,
+    .sass,
+    .wiring {
+      .progress {
+        background-color: $grey;
+
+        .percent {
+          background-color: $green;
+          width: 70%;
+        }
+      }
+    }
+
+    .ps,
+    .proteus {
+      .progress {
+        background-color: $grey;
+
+        .percent {
+          background-color: $green;
+          width: 50%;
+        }
+      }
+    }
+
+    .figma,
+    .ac,
+    .matlab,
+    .arduino {
+      .progress {
+        background-color: $grey;
+
+        .percent {
+          background-color: $green;
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  #form {
+
+    input[type=text]:not(.browser-default),
+    input[type=number]:not(.browser-default),
+    input[type=email]:not(.browser-default),
+    textarea[type=text]:not(.browser-default) {
+      border-bottom: 1px solid $white;
+      color: $white;
+      font-family: 'stephen__raleway';
+    }
+
+    /* to remove arrows/spinners from input type="number" for chrome, safari, edge, opera*/
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+
+    /* to remove arrows/spinners from input type="number" for firefox*/
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    label {
+      color: darken($color: $white, $amount: 20%);
+
+      &:not(.label-icon).active {
+        color: $white;
+      }
+    }
+
+    .btn:hover {
+      background-color: darken($color: $white, $amount: 10%);
+      color: darken($color: $green, $amount: 10%);
+    }
+  }
+
+  #sent {
+    max-width: 420px;
+    margin: auto;
+  }
+
+  #floating__btn {
+    a {
+      color: $white;
+      @include transition__ease-in-out;
+    }
+  }
+
+  footer {
+    .row {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
