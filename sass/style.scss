@@ -5,16 +5,23 @@
 body {
   font-family: 'stephen__raleway';
 
+  .btn:hover,
+  .btn-small:hover,
+  .btn-floating:hover {
+    background-color: darken($color: $green, $amount: 5%);
+    color: darken($color: $white, $amount: 5%);
+  }
+
   nav {
-    box-shadow: none !important;
+    box-shadow: none;
 
     a {
       color: $black;
       @include transition__ease-in-out;
 
       &:hover {
-        background-color: transparent !important;
-        color: $green !important;
+        background-color: transparent;
+        color: $green;
       }
     }
 
@@ -122,7 +129,7 @@ body {
       }
     }
   }
-
+  
   #form {
 
     input[type=text]:not(.browser-default),
@@ -163,11 +170,6 @@ body {
     a {
       color: $white;
       @include transition__ease-in-out;
-
-      &:hover {
-        color: darken($color: $white, $amount: 5%);
-        background-color: darken($color: $green, $amount: 5%);
-      }
     }
   }
 

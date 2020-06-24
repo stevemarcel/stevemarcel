@@ -9,16 +9,12 @@ CUSTOM CLASSES
   }
 
   &__active {
-    background-color: transparent !important;
+    background-color: transparent;
     color: $green !important;
   }
 
   &__axis-font {
     font-family: 'stephen__axis';
-  }
-
-  &__raleway-font {
-    font-family: 'stephen__raleway';
   }
 
   &__bg-green {
@@ -29,6 +25,24 @@ CUSTOM CLASSES
   &__bg-white {
     background-color: $white;
     color: $green;
+  }
+
+  &__hide-on-large-and-down {
+    @include brkpt (mobile) {
+      display: none;
+    }
+
+    @include brkpt (tab) {
+      display: none;
+    }
+
+    @include brkpt (desktop) {
+      display: none;
+    }
+
+    @include brkpt (largedesktop) {
+      display: block;
+    }
   }
 
   &__icon-size {
@@ -61,6 +75,10 @@ CUSTOM CLASSES
 
   &__py-2 {
     padding: 2vh 0;
+  }
+
+  &__raleway-font {
+    font-family: 'stephen__raleway';
   }
 
   &__text-green {
