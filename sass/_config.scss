@@ -11,14 +11,12 @@ CUSTOM FONTS
   src: url('../assets/fonts/axis.otf');
 }
 
-
 /*******************************
 MIXINS
 *******************************/
 @mixin transition__ease-in-out {
   transition: all .5s ease-in-out;
 }
-
 
 /*******************************
 VARIABLES

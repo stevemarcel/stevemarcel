@@ -1,5 +1,5 @@
 /*jshint esversion: 6*/
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Sidenav init
   const sideNav = document.querySelector('.sidenav');
   M.Sidenav.init(sideNav, {});

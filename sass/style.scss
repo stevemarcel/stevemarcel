@@ -129,7 +129,7 @@ body {
       }
     }
   }
-  
+
   #form {
 
     input[type=text]:not(.browser-default),
@@ -164,6 +164,11 @@ body {
       background-color: darken($color: $white, $amount: 10%);
       color: darken($color: $green, $amount: 10%);
     }
+  }
+
+  #sent {
+    max-width: 420px;
+    margin: auto;
   }
 
   #floating__btn {
