@@ -1,27 +1,41 @@
 # personal_profile
 
-My personal profile page. This site was built using different methods.
-(1) flexbox.
-(2) gridbox.
+My personal profile page. This site was built using different methods. Each method is seperated into different branches as:
 
-## page layout design
+(1) flexbox branch.
 
-### desktop view version 1.02.44
+(2) gridbox branch.
 
-![desktop page view](./img/StephenOnyejuluwa-laptop-scrn.jpg)
+(3) [materializecss](http://materializecss.com) branch.
 
-### desktop view version 1.12.04.26
+The name of each branch specifies the method used in creating them. This website is fully responsive on all screens.
 
-![desktop page viewversion 1.12.04.26](./img/StephenOnyejuluwa-laptop-scrn-v1-12-04-26.jpg)
+## Page layout design
 
-### mobile view version 1.02.44
+### Desktop view of home page
 
-![mobile page view](./img/StephenOnyejuluwa-mobile-scrn.jpg)
+![desktop view of home page](./assets/img/layouts/desktop/stevemarcel-portfolio-home-desktop.jpg)
 
-### mobile view version 1.12.04.26
+### Desktop view of projects page
 
-![mobile page view version 1.12.04.26](./img/StephenOnyejuluwa-mobile-scrn-v1-12-04-26.jpg)
+![desktop page view of projects page](./assets/img/layouts/desktop/stevemarcel-portfolio-projects-desktop.jpg)
+
+### Desktop view of contact page
+
+![desktop page view of contact page](./assets/img/layouts/desktop/stevemarcel-portfolio-contact-desktop.jpg)
+
+### Mobile view of home page
+
+![mobile view of home page](./assets/img/layouts/mobile/stevemarcel-portfolio-home-mobile.jpg)
+
+### Mobile view of project page
+
+![mobile view of project page](./assets/img/layouts/mobile/stevemarcel-portfolio-projects-mobile.jpg)
+
+### Mobile view of contact page
+
+![mobile view of contact page](./assets/img/layouts/mobile/stevemarcel-portfolio-contact-mobile.jpg)
 
 ## Author
 
-[stevemarcel](https://github.com/stevemarcel)
+[stevemarcel](https://github.com/stevemarcel), the shark dev.
