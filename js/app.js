@@ -8,8 +8,8 @@ const floatingactionbutton = document.querySelectorAll('.fixed-action-btn');
 M.FloatingActionButton.init(floatingactionbutton, {});
 
 // Fixed contact button init
-const floatingmenubutton = document.querySelectorAll('.floating__menu__button');
-M.FloatingActionButton.init(floatingmenubutton, { toolbarEnabled: true });
+// const floatingmenubutton = document.querySelectorAll('.floating__menu__button');
+// M.FloatingActionButton.init(floatingmenubutton, { toolbarEnabled: true });
 
 // Tool tip init
 const tooltip = document.querySelectorAll('.tooltipped');
