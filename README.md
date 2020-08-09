@@ -1,6 +1,6 @@
 # personal_profile
 
-My personal profile page. This site was built using different methods. Each method is seperated into different branches as:
+My personal profile page. This site was built using different methods. Each method is separated into different branches as:
 
 (1) flexbox branch.
 
@@ -9,6 +9,8 @@ My personal profile page. This site was built using different methods. Each meth
 (3) [materializecss](http://materializecss.com) branch.
 
 The name of each branch specifies the method used in creating them. This website is fully responsive on all screens.
+
+The current master branch is merged with the [materializecss](http://materializecss.com) branch. This branch was built with [sass](http://sass-lang.com) and for the icons [font awesome](http://fontawesome.com) was used.
 
 ## Page layout design
 
@@ -38,4 +40,4 @@ The name of each branch specifies the method used in creating them. This website
 
 ## Author
 
-[stevemarcel](https://github.com/stevemarcel), the shark dev.
+[Stevemarcel](https://github.com/stevemarcel), the shark dev.

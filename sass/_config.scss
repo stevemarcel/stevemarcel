@@ -50,6 +50,12 @@ body {
   flex-direction: column;
   overflow-x: hidden;
 
+  /* to remove the default teal colour on materialize active*/
+  .active {
+    color: inherit !important;
+    opacity: .9;
+  }
+
   main {
     flex: 1 0 auto;
 
