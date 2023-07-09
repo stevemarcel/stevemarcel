@@ -6,8 +6,8 @@ Developer, Designer and Speaker.
 
 I am a JavaScript Developer and designer with a passion for creating unique products that solve specific problems; especially problems I've faced myself.
 
-* 🌍  I'm based in Lagos, Nigeria.
-* ✉️  You can contact me at [just.stevemarcel@gmail.com](mailto:just.stevemarcel@gmail.com)
+* 🌍  Lagos, Nigeria.
+* ✉️  [just.stevemarcel@gmail.com](mailto:just.stevemarcel@gmail.com)
 * 🧠  I'm learning everything NextJS
 
 ### Skills
