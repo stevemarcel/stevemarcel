@@ -8,7 +8,6 @@ I am a JavaScript Developer and designer with a passion for creating unique prod
 
 * 🌍  Lagos, Nigeria.
 * ✉️  [just.stevemarcel@gmail.com](mailto:just.stevemarcel@gmail.com)
-* 🧠  I'm learning everything NextJS
 
 ### Skills
 
